@@ -5,6 +5,7 @@ To develop a Python program to evaluate the given policy.
 ## PROBLEM STATEMENT
 To find best policy from two policies which are defined by user using policy evaluation function. Where the mdp includes 16 states from 0-15, 0 is the starting state, assigning some 4 random state as holes and 15 is the goal state and then we need to calculate optimal state value function for each state such that we can reach goal using optimal policy using policy evaluation.
 ## POLICY EVALUATION FUNCTION
+```
 def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
     prev_V = np.zeros(len(P), dtype=np.float64)
     # Write your code here to evaluate the given policy
@@ -17,6 +18,7 @@ def policy_evaluation(pi, P, gamma=1.0, theta=1e-10):
         break
       prev_V=V.copy()
     return V
+```
 ## OUTPUT:
 ![Screenshot 2025-04-07 094301](https://github.com/user-attachments/assets/458412a6-da36-4f39-90f3-d50e41efea5f)
 ![Screenshot 2025-04-07 094450](https://github.com/user-attachments/assets/5c3c5d81-36a6-482e-9042-15da5057480c)
